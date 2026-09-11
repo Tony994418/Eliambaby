@@ -1,875 +1,1342 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Baby Shower de Eliam 🧸💙</title>
+    <title>Baby Shower de Eliam 🧸💙</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
-<style>
-:root{
-    --blue:#477995;
-    --blue-dark:#345f78;
-    --blue-light:#dcecf4;
-    --blue-soft:#edf6fa;
-    --cream:#fffdf8;
-    --gold:#efce8e;
-    --text:#496b7d;
-    --muted:#7993a1;
-    --green:#2eb66d;
-    --line:#c7dce6;
-    --shadow:0 18px 45px rgba(57,99,123,.12);
-}
+    <style>
+        :root {
+            --blue: #477995;
+            --blue-dark: #345f78;
+            --blue-light: #dcecf4;
+            --blue-soft: #edf6fa;
+            --cream: #fffdf8;
+            --gold: #efce8e;
+            --text: #496b7d;
+            --muted: #7993a1;
+            --green: #2eb66d;
+            --line: #c7dce6;
+            --shadow: 0 18px 45px rgba(57, 99, 123, .12);
+        }
 
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-    font-family:"Poppins",sans-serif;
-    color:var(--text);
-    background:
-        radial-gradient(circle at 8% 18%,rgba(218,239,248,.75),transparent 24%),
-        radial-gradient(circle at 94% 45%,rgba(255,239,207,.38),transparent 23%),
-        var(--cream);
-    overflow-x:hidden;
-}
-img{max-width:100%;display:block}
-button,a{-webkit-tap-highlight-color:transparent}
-.script{font-family:"Dancing Script",cursive}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
 
-/* ---------- DECORACIONES GENERALES ---------- */
-.floating{
-    position:fixed;
-    z-index:-1;
-    pointer-events:none;
-    opacity:.65;
-    animation:float 5s ease-in-out infinite;
-}
-.floating.star{color:var(--gold);font-size:32px;text-shadow:0 5px 10px rgba(200,160,90,.22)}
-.f1{left:4%;top:22%}.f2{right:5%;top:33%;animation-delay:1.2s}
-.f3{left:7%;bottom:22%;animation-delay:2.1s}.f4{right:8%;bottom:12%;animation-delay:3s}
-@keyframes float{
-    0%,100%{transform:translateY(0) rotate(0)}
-    50%{transform:translateY(-14px) rotate(6deg)}
-}
+        html {
+            scroll-behavior: smooth
+        }
 
-/* ---------- MÚSICA ---------- */
-.music{
-    position:fixed;
-    top:18px;right:18px;
-    width:58px;height:58px;
-    border:none;border-radius:50%;
-    color:#fff;font-size:20px;
-    background:linear-gradient(135deg,#3d718e,#659ab7);
-    box-shadow:0 12px 28px rgba(48,96,125,.28);
-    cursor:pointer;z-index:100;
-    transition:.3s;
-}
-.music:hover{transform:translateY(-3px) scale(1.05)}
-.music.playing{animation:pulse 1.6s infinite}
-@keyframes pulse{
-    50%{box-shadow:0 0 0 12px rgba(71,121,149,.12),0 12px 28px rgba(48,96,125,.28)}
-}
+        body {
+            font-family: "Poppins", sans-serif;
+            color: var(--text);
+            background:
+                radial-gradient(circle at 8% 18%, rgba(218, 239, 248, .75), transparent 24%),
+                radial-gradient(circle at 94% 45%, rgba(255, 239, 207, .38), transparent 23%),
+                var(--cream);
+            overflow-x: hidden;
+        }
 
-/* =================================================
+        img {
+            max-width: 100%;
+            display: block
+        }
+
+        button,
+        a {
+            -webkit-tap-highlight-color: transparent
+        }
+
+        .script {
+            font-family: "Dancing Script", cursive
+        }
+
+        /* ---------- DECORACIONES GENERALES ---------- */
+        .floating {
+            position: fixed;
+            z-index: -1;
+            pointer-events: none;
+            opacity: .65;
+            animation: float 5s ease-in-out infinite;
+        }
+
+        .floating.star {
+            color: var(--gold);
+            font-size: 32px;
+            text-shadow: 0 5px 10px rgba(200, 160, 90, .22)
+        }
+
+        .f1 {
+            left: 4%;
+            top: 22%
+        }
+
+        .f2 {
+            right: 5%;
+            top: 33%;
+            animation-delay: 1.2s
+        }
+
+        .f3 {
+            left: 7%;
+            bottom: 22%;
+            animation-delay: 2.1s
+        }
+
+        .f4 {
+            right: 8%;
+            bottom: 12%;
+            animation-delay: 3s
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(0)
+            }
+
+            50% {
+                transform: translateY(-14px) rotate(6deg)
+            }
+        }
+
+        /* ---------- MÚSICA ---------- */
+        .music {
+            position: fixed;
+            top: 18px;
+            right: 18px;
+            width: 58px;
+            height: 58px;
+            border: none;
+            border-radius: 50%;
+            color: #fff;
+            font-size: 20px;
+            background: linear-gradient(135deg, #3d718e, #659ab7);
+            box-shadow: 0 12px 28px rgba(48, 96, 125, .28);
+            cursor: pointer;
+            z-index: 100;
+            transition: .3s;
+        }
+
+        .music:hover {
+            transform: translateY(-3px) scale(1.05)
+        }
+
+        .music.playing {
+            animation: pulse 1.6s infinite
+        }
+
+        @keyframes pulse {
+            50% {
+                box-shadow: 0 0 0 12px rgba(71, 121, 149, .12), 0 12px 28px rgba(48, 96, 125, .28)
+            }
+        }
+
+        /* =================================================
    PORTADA
 ================================================= */
-.hero{
-    min-height:690px;
-    position:relative;
-    overflow:hidden;
-    background:#dcebf3 url("oso.png") center center/cover no-repeat;
-}
-.hero::before{
-    content:"";
-    position:absolute;inset:0;
-    background:
-        linear-gradient(90deg,
-            rgba(255,255,255,0) 0%,
-            rgba(255,255,255,0) 37%,
-            rgba(255,255,255,.12) 48%,
-            rgba(255,255,255,.66) 72%,
-            rgba(255,253,248,.90) 100%);
-    pointer-events:none;
-}
-.hero::after{
-    content:"";
-    position:absolute;
-    height:95px;width:120%;
-    bottom:-55px;left:-10%;
-    background:var(--cream);
-    border-radius:50% 50% 0 0/100% 100% 0 0;
-}
-.hero-content{
-    width:min(1200px,92%);
-    min-height:690px;
-    margin:auto;
-    position:relative;
-    z-index:2;
-    display:flex;
-    align-items:center;
-    justify-content:flex-end;
-    padding:35px 0 95px;
-}
-.hero-copy{
-    width:min(53%,610px);
-    text-align:center;
-    padding:25px 15px;
-}
-.kicker{
-    color:var(--blue-dark);
-    text-transform:uppercase;
-    font-size:14px;
-    font-weight:600;
-    letter-spacing:4px;
-    margin-bottom:4px;
-}
-.kicker .mini-heart{font-size:20px;color:#8bb5c9;margin:0 7px}
-.hero h1{
-    font-family:"Dancing Script",cursive;
-    font-size:clamp(64px,7.4vw,106px);
-    font-weight:600;
-    line-height:.88;
-    color:var(--blue);
-    text-shadow:0 3px 2px rgba(255,255,255,.75);
-}
-.hero-sub{
-    font-size:20px;
-    color:var(--blue-dark);
-    margin:18px 0 14px;
-    letter-spacing:.4px;
-}
-.name-pill{
-    display:inline-flex;
-    align-items:center;
-    gap:16px;
-    padding:11px 34px 12px;
-    background:rgba(255,255,255,.72);
-    border:1px dashed #b6ceda;
-    border-radius:35px;
-    box-shadow:0 12px 30px rgba(59,105,130,.09);
-}
-.name-pill strong{
-    font-family:"Baloo 2",sans-serif;
-    font-size:clamp(40px,4vw,58px);
-    letter-spacing:8px;
-    line-height:1;
-    color:var(--blue);
-}
-.name-pill span{color:#83afc4;font-size:22px}
-.hero-message{
-    max-width:540px;
-    margin:22px auto 0;
-    font-size:16px;
-    line-height:1.7;
-    color:var(--text);
-}
-.waiting{
-    font-family:"Dancing Script",cursive;
-    color:var(--blue);
-    font-size:40px;
-    font-weight:600;
-    margin-top:5px;
-}
-.decor-line{
-    display:flex;align-items:center;justify-content:center;gap:10px;
-    color:#78a8c0;margin-top:2px;
-}
-.decor-line::before,.decor-line::after{
-    content:"";height:1px;width:72px;background:#8bb5c8;
-}
+        .hero {
+            min-height: 690px;
+            position: relative;
+            overflow: hidden;
+            background: #dcebf3 url("oso.png") center center/cover no-repeat;
+        }
 
-/* ---------- CONTENEDOR ---------- */
-.section{width:min(1120px,92%);margin:auto;padding:58px 0}
-.section-title{
-    text-align:center;
-    color:var(--blue);
-    font-family:"Dancing Script",cursive;
-    font-size:52px;
-    font-weight:600;
-    line-height:1;
-    margin-bottom:34px;
-}
-.section-title .heart{display:block;font-family:"Poppins";font-size:18px;color:#82b1c7;margin-top:8px}
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background:
+                linear-gradient(90deg,
+                    rgba(255, 255, 255, 0) 0%,
+                    rgba(255, 255, 255, 0) 37%,
+                    rgba(255, 255, 255, .12) 48%,
+                    rgba(255, 255, 255, .66) 72%,
+                    rgba(255, 253, 248, .90) 100%);
+            pointer-events: none;
+        }
 
-/* =================================================
+        .hero::after {
+            content: "";
+            position: absolute;
+            height: 95px;
+            width: 120%;
+            bottom: -55px;
+            left: -10%;
+            background: var(--cream);
+            border-radius: 50% 50% 0 0/100% 100% 0 0;
+        }
+
+        .hero-content {
+            width: min(1200px, 92%);
+            min-height: 690px;
+            margin: auto;
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 35px 0 95px;
+        }
+
+        .hero-copy {
+            width: min(53%, 610px);
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        .kicker {
+            color: var(--blue-dark);
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 4px;
+            margin-bottom: 4px;
+        }
+
+        .kicker .mini-heart {
+            font-size: 20px;
+            color: #8bb5c9;
+            margin: 0 7px
+        }
+
+        .hero h1 {
+            font-family: "Dancing Script", cursive;
+            font-size: clamp(64px, 7.4vw, 106px);
+            font-weight: 600;
+            line-height: .88;
+            color: var(--blue);
+            text-shadow: 0 3px 2px rgba(255, 255, 255, .75);
+        }
+
+        .hero-sub {
+            font-size: 20px;
+            color: var(--blue-dark);
+            margin: 18px 0 14px;
+            letter-spacing: .4px;
+        }
+
+        .name-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 16px;
+            padding: 11px 34px 12px;
+            background: rgba(255, 255, 255, .72);
+            border: 1px dashed #b6ceda;
+            border-radius: 35px;
+            box-shadow: 0 12px 30px rgba(59, 105, 130, .09);
+        }
+
+        .name-pill strong {
+            font-family: "Baloo 2", sans-serif;
+            font-size: clamp(40px, 4vw, 58px);
+            letter-spacing: 8px;
+            line-height: 1;
+            color: var(--blue);
+        }
+
+        .name-pill span {
+            color: #83afc4;
+            font-size: 22px
+        }
+
+        .hero-message {
+            max-width: 540px;
+            margin: 22px auto 0;
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--text);
+        }
+
+        .waiting {
+            font-family: "Dancing Script", cursive;
+            color: var(--blue);
+            font-size: 40px;
+            font-weight: 600;
+            margin-top: 5px;
+        }
+
+        .decor-line {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: #78a8c0;
+            margin-top: 2px;
+        }
+
+        .decor-line::before,
+        .decor-line::after {
+            content: "";
+            height: 1px;
+            width: 72px;
+            background: #8bb5c8;
+        }
+
+        /* ---------- CONTENEDOR ---------- */
+        .section {
+            width: min(1120px, 92%);
+            margin: auto;
+            padding: 58px 0
+        }
+
+        .section-title {
+            text-align: center;
+            color: var(--blue);
+            font-family: "Dancing Script", cursive;
+            font-size: 52px;
+            font-weight: 600;
+            line-height: 1;
+            margin-bottom: 34px;
+        }
+
+        .section-title .heart {
+            display: block;
+            font-family: "Poppins";
+            font-size: 18px;
+            color: #82b1c7;
+            margin-top: 8px
+        }
+
+        /* =================================================
    CUENTA REGRESIVA
 ================================================= */
-.countdown{
-    display:grid;
-    grid-template-columns:34% 66%;
-    align-items:center;
-    padding:8px;
-    border-radius:30px;
-    border:1px dashed #b8d3df;
-    background:linear-gradient(135deg,rgba(234,247,252,.92),rgba(255,253,248,.96));
-    box-shadow:var(--shadow);
-}
-.count-intro{
-    min-height:145px;
-    padding:20px 25px;
-    display:flex;align-items:center;justify-content:center;
-    text-align:center;
-}
-.count-intro .bear{font-size:42px;display:block;margin-bottom:2px}
-.count-intro h2{
-    font-family:"Dancing Script",cursive;
-    font-size:34px;
-    font-weight:500;
-    line-height:1.1;
-    color:var(--blue);
-}
-.count-grid{
-    display:flex;justify-content:center;align-items:center;
-    gap:15px;padding:18px 12px;flex-wrap:wrap;
-}
-.time-box{
-    width:118px;height:108px;
-    border-radius:24px;
-    background:rgba(255,255,255,.82);
-    border:1px solid rgba(214,229,235,.9);
-    box-shadow:0 10px 25px rgba(57,100,125,.09);
-    display:flex;flex-direction:column;
-    justify-content:center;align-items:center;
-}
-.time-box b{
-    font-family:"Baloo 2",sans-serif;
-    font-size:43px;line-height:1;color:var(--blue);
-}
-.time-box span{
-    margin-top:7px;
-    color:#7893a0;
-    font-size:10px;
-    letter-spacing:1.8px;
-}
+        .countdown {
+            display: grid;
+            grid-template-columns: 34% 66%;
+            align-items: center;
+            padding: 8px;
+            border-radius: 30px;
+            border: 1px dashed #b8d3df;
+            background: linear-gradient(135deg, rgba(234, 247, 252, .92), rgba(255, 253, 248, .96));
+            box-shadow: var(--shadow);
+        }
 
-/* =================================================
+        .count-intro {
+            min-height: 145px;
+            padding: 20px 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .count-intro .bear {
+            font-size: 42px;
+            display: block;
+            margin-bottom: 2px
+        }
+
+        .count-intro h2 {
+            font-family: "Dancing Script", cursive;
+            font-size: 34px;
+            font-weight: 500;
+            line-height: 1.1;
+            color: var(--blue);
+        }
+
+        .count-grid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            padding: 18px 12px;
+            flex-wrap: wrap;
+        }
+
+        .time-box {
+            width: 118px;
+            height: 108px;
+            border-radius: 24px;
+            background: rgba(255, 255, 255, .82);
+            border: 1px solid rgba(214, 229, 235, .9);
+            box-shadow: 0 10px 25px rgba(57, 100, 125, .09);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .time-box b {
+            font-family: "Baloo 2", sans-serif;
+            font-size: 43px;
+            line-height: 1;
+            color: var(--blue);
+        }
+
+        .time-box span {
+            margin-top: 7px;
+            color: #7893a0;
+            font-size: 10px;
+            letter-spacing: 1.8px;
+        }
+
+        /* =================================================
    FECHA / HORA / LUGAR
 ================================================= */
-.event-wrap{
-    padding:8px 10px 22px;
-    border-radius:35px;
-    background:linear-gradient(135deg,rgba(255,255,255,.78),rgba(240,249,252,.52));
-    box-shadow:0 15px 38px rgba(57,100,125,.06);
-}
-.event-grid{display:grid;grid-template-columns:repeat(3,1fr)}
-.event{
-    position:relative;
-    min-height:180px;
-    padding:25px 20px;
-    text-align:center;
-    display:flex;flex-direction:column;align-items:center;justify-content:center;
-}
-.event:not(:last-child)::after{
-    content:"";position:absolute;right:0;top:20%;
-    width:1px;height:60%;background:#d4e1e6;
-}
-.event-icon{font-size:39px;margin-bottom:7px}
-.event small{font-size:15px;color:#7892a0}
-.event strong{
-    font-family:"Baloo 2",sans-serif;
-    color:var(--blue);
-    font-size:28px;line-height:1.18;
-    margin-top:6px;
-}
-.event .big-date{font-size:44px}
-.map{text-align:center;margin-top:5px}
-.btn{
-    display:inline-flex;align-items:center;justify-content:center;gap:9px;
-    padding:14px 28px;
-    border-radius:30px;
-    text-decoration:none;
-    border:none;cursor:pointer;
-    font:500 14px "Poppins",sans-serif;
-    transition:.3s;
-}
-.btn:hover{transform:translateY(-3px)}
-.btn-blue{
-    color:#fff;
-    background:linear-gradient(135deg,#3f718e,#6298b7);
-    box-shadow:0 10px 24px rgba(57,112,145,.23);
-}
-.btn-green{
-    color:#fff;
-    background:linear-gradient(135deg,#20a85f,#3dc77d);
-    box-shadow:0 10px 24px rgba(36,181,104,.24);
-}
+        .event-wrap {
+            padding: 8px 10px 22px;
+            border-radius: 35px;
+            background: linear-gradient(135deg, rgba(255, 255, 255, .78), rgba(240, 249, 252, .52));
+            box-shadow: 0 15px 38px rgba(57, 100, 125, .06);
+        }
 
-/* =================================================
+        .event-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr)
+        }
+
+        .event {
+            position: relative;
+            min-height: 180px;
+            padding: 25px 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .event:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 20%;
+            width: 1px;
+            height: 60%;
+            background: #d4e1e6;
+        }
+
+        .event-icon {
+            font-size: 39px;
+            margin-bottom: 7px
+        }
+
+        .event small {
+            font-size: 15px;
+            color: #7892a0
+        }
+
+        .event strong {
+            font-family: "Baloo 2", sans-serif;
+            color: var(--blue);
+            font-size: 28px;
+            line-height: 1.18;
+            margin-top: 6px;
+        }
+
+        .event .big-date {
+            font-size: 44px
+        }
+
+        .map {
+            text-align: center;
+            margin-top: 5px
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            padding: 14px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            font: 500 14px "Poppins", sans-serif;
+            transition: .3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px)
+        }
+
+        .btn-blue {
+            color: #fff;
+            background: linear-gradient(135deg, #3f718e, #6298b7);
+            box-shadow: 0 10px 24px rgba(57, 112, 145, .23);
+        }
+
+        .btn-green {
+            color: #fff;
+            background: linear-gradient(135deg, #20a85f, #3dc77d);
+            box-shadow: 0 10px 24px rgba(36, 181, 104, .24);
+        }
+
+        /* =================================================
    RSVP
 ================================================= */
-.rsvp{
-    display:grid;
-    grid-template-columns:55% 45%;
-    align-items:center;
-    border-radius:32px;
-    overflow:hidden;
-    background:linear-gradient(135deg,#eaf6fb,#f9fcfd);
-    box-shadow:var(--shadow);
-    border:1px solid rgba(215,230,236,.85);
-}
-.rsvp-left{
-    padding:36px 48px;
-    border-right:1px solid #d5e4ea;
-}
-.rsvp-left .wa-icon{font-size:47px;float:left;margin-right:16px}
-.rsvp h2{
-    font-family:"Dancing Script",cursive;
-    font-size:40px;line-height:1;
-    color:var(--blue);margin-bottom:8px;
-}
-.rsvp p{font-size:14px;line-height:1.7;margin:13px 0 20px}
-.rsvp-right{text-align:center;padding:30px}
-.rsvp-right p{
-    font-family:"Dancing Script",cursive;
-    color:var(--blue);
-    font-size:31px;
-    line-height:1.18;
-    margin:0;
-}
-.rsvp-hearts{font-size:22px;color:#82afc5;margin-top:10px}
+        .rsvp {
+            display: grid;
+            grid-template-columns: 55% 45%;
+            align-items: center;
+            border-radius: 32px;
+            overflow: hidden;
+            background: linear-gradient(135deg, #eaf6fb, #f9fcfd);
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(215, 230, 236, .85);
+        }
 
-/* =================================================
+        .rsvp-left {
+            padding: 36px 48px;
+            border-right: 1px solid #d5e4ea;
+        }
+
+        .rsvp-left .wa-icon {
+            font-size: 47px;
+            float: left;
+            margin-right: 16px
+        }
+
+        .rsvp h2 {
+            font-family: "Dancing Script", cursive;
+            font-size: 40px;
+            line-height: 1;
+            color: var(--blue);
+            margin-bottom: 8px;
+        }
+
+        .rsvp p {
+            font-size: 14px;
+            line-height: 1.7;
+            margin: 13px 0 20px
+        }
+
+        .rsvp-right {
+            text-align: center;
+            padding: 30px
+        }
+
+        .rsvp-right p {
+            font-family: "Dancing Script", cursive;
+            color: var(--blue);
+            font-size: 31px;
+            line-height: 1.18;
+            margin: 0;
+        }
+
+        .rsvp-hearts {
+            font-size: 22px;
+            color: #82afc5;
+            margin-top: 10px
+        }
+
+        /* =================================================
    DOS TARJETAS: PRESENCIA + PAPÁS
 ================================================= */
-.bottom-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}
-.soft-card{
-    min-height:310px;
-    padding:30px 34px;
-    border-radius:30px;
-    background:rgba(255,255,255,.82);
-    border:1px solid #e2ecef;
-    box-shadow:var(--shadow);
-    position:relative;
-    overflow:hidden;
-}
-.soft-card::after{
-    content:"✦";
-    position:absolute;right:20px;bottom:16px;
-    color:#f0d69d;font-size:25px;opacity:.8;
-}
-.card-icon{font-size:43px;margin-bottom:3px}
-.soft-card h2{
-    font-family:"Dancing Script",cursive;
-    color:var(--blue);
-    font-size:40px;line-height:1.05;
-    margin-bottom:12px;
-}
-.soft-card p{font-size:14px;line-height:1.75;max-width:450px}
+        .bottom-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px
+        }
 
-/* ---------- PRESENCIA ---------- */
-.presence-card{text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center}
-.presence-card .card-icon{font-size:52px}
-.presence-card h2{font-size:42px}
-.presence-card .small-heart{font-size:24px;color:#8ab5c9;margin-top:5px}
+        .soft-card {
+            min-height: 310px;
+            padding: 30px 34px;
+            border-radius: 30px;
+            background: rgba(255, 255, 255, .82);
+            border: 1px solid #e2ecef;
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+        }
 
-/* ---------- FUTUROS PAPÁS ---------- */
-.parents-card{
-    display:grid;
-    grid-template-columns:48% 52%;
-    align-items:center;
-    gap:10px;
-}
-.parents-photo{text-align:center}
-.polaroid{
-    width:190px;
-    padding:9px 9px 24px;
-    margin:auto;
-    background:#fff;
-    box-shadow:0 10px 20px rgba(60,80,90,.20);
-    transform:rotate(-4deg);
-    position:relative;
-}
-.polaroid img{
-    width:100%;
-    aspect-ratio:1/1;
-    object-fit:cover;
-    background:#edf3f5;
-}
-.polaroid .placeholder{
-    width:100%;aspect-ratio:1/1;
-    background:linear-gradient(135deg,#dcebf2,#f8f5ed);
-    color:#7b9bab;
-    display:flex;align-items:center;justify-content:center;
-    flex-direction:column;font-size:30px;
-}
-.polaroid .placeholder small{font:11px "Poppins";margin-top:7px}
-.polaroid-caption{
-    text-align:center;
-    font-family:"Dancing Script",cursive;
-    color:#6e8998;
-    font-size:18px;margin-top:5px;
-}
-.parents-info{text-align:center}
-.parents-info .camera{font-size:36px}
-.parents-info h2{font-size:37px}
-.parent-names{
-    margin-top:10px;
-    font-family:"Dancing Script",cursive;
-    font-size:36px;line-height:1.05;
-    color:var(--blue);
-}
-.parent-names .and{
-    display:block;
-    font:17px "Poppins",sans-serif;
-    color:#d5b66d;
-    margin:4px 0;
-}
+        .soft-card::after {
+            content: "✦";
+            position: absolute;
+            right: 20px;
+            bottom: 16px;
+            color: #f0d69d;
+            font-size: 25px;
+            opacity: .8;
+        }
 
-/* =================================================
+        .card-icon {
+            font-size: 43px;
+            margin-bottom: 3px
+        }
+
+        .soft-card h2 {
+            font-family: "Dancing Script", cursive;
+            color: var(--blue);
+            font-size: 40px;
+            line-height: 1.05;
+            margin-bottom: 12px;
+        }
+
+        .soft-card p {
+            font-size: 14px;
+            line-height: 1.75;
+            max-width: 450px
+        }
+
+        /* ---------- PRESENCIA ---------- */
+        .presence-card {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center
+        }
+
+        .presence-card .card-icon {
+            font-size: 52px
+        }
+
+        .presence-card h2 {
+            font-size: 42px
+        }
+
+        .presence-card .small-heart {
+            font-size: 24px;
+            color: #8ab5c9;
+            margin-top: 5px
+        }
+
+        /* ---------- FUTUROS PAPÁS ---------- */
+        .parents-card {
+            display: grid;
+            grid-template-columns: 48% 52%;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .parents-photo {
+            text-align: center
+        }
+
+        .polaroid {
+            width: 190px;
+            padding: 9px 9px 24px;
+            margin: auto;
+            background: #fff;
+            box-shadow: 0 10px 20px rgba(60, 80, 90, .20);
+            transform: rotate(-4deg);
+            position: relative;
+        }
+
+        .polaroid img {
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            background: #edf3f5;
+        }
+
+        .polaroid .placeholder {
+            width: 100%;
+            aspect-ratio: 1/1;
+            background: linear-gradient(135deg, #dcebf2, #f8f5ed);
+            color: #7b9bab;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-size: 30px;
+        }
+
+        .polaroid .placeholder small {
+            font: 11px "Poppins";
+            margin-top: 7px
+        }
+
+        .polaroid-caption {
+            text-align: center;
+            font-family: "Dancing Script", cursive;
+            color: #6e8998;
+            font-size: 18px;
+            margin-top: 5px;
+        }
+
+        .parents-info {
+            text-align: center
+        }
+
+        .parents-info .camera {
+            font-size: 36px
+        }
+
+        .parents-info h2 {
+            font-size: 37px
+        }
+
+        .parent-names {
+            margin-top: 10px;
+            font-family: "Dancing Script", cursive;
+            font-size: 36px;
+            line-height: 1.05;
+            color: var(--blue);
+        }
+
+        .parent-names .and {
+            display: block;
+            font: 17px "Poppins", sans-serif;
+            color: #d5b66d;
+            margin: 4px 0;
+        }
+
+        /* =================================================
    FOOTER
 ================================================= */
-footer{
-    position:relative;
-    margin-top:30px;
-    padding:92px 20px 42px;
-    text-align:center;
-    overflow:hidden;
-    background:linear-gradient(#fffdf8,#e6f3f8);
-}
-footer::before{
-    content:"";
-    position:absolute;left:-10%;top:-70px;width:120%;height:125px;
-    border-radius:50%;
-    background:var(--cream);
-}
-.footer-inner{position:relative;z-index:1}
-.footer-bear{font-size:55px}
-footer h2{
-    font-family:"Dancing Script",cursive;
-    color:var(--blue);
-    font-size:45px;line-height:1;
-}
-footer .footer-line{
-    color:#82b0c5;
-    display:flex;align-items:center;justify-content:center;gap:12px;
-    margin:8px 0 12px;
-}
-footer .footer-line::before,footer .footer-line::after{
-    content:"";width:70px;height:1px;background:#92b9ca;
-}
-footer p{font-size:13px;color:#76909d;margin-top:5px}
-footer .tiny{font-size:10px;opacity:.65;margin-top:25px}
+        footer {
+            position: relative;
+            margin-top: 30px;
+            padding: 92px 20px 42px;
+            text-align: center;
+            overflow: hidden;
+            background: linear-gradient(#fffdf8, #e6f3f8);
+        }
 
-/* ---------- REVEAL ---------- */
-.reveal{opacity:0;transform:translateY(32px);transition:opacity .8s ease,transform .8s ease}
-.reveal.show{opacity:1;transform:none}
+        footer::before {
+            content: "";
+            position: absolute;
+            left: -10%;
+            top: -70px;
+            width: 120%;
+            height: 125px;
+            border-radius: 50%;
+            background: var(--cream);
+        }
 
-/* =================================================
+        .footer-inner {
+            position: relative;
+            z-index: 1
+        }
+
+        .footer-bear {
+            font-size: 55px
+        }
+
+        footer h2 {
+            font-family: "Dancing Script", cursive;
+            color: var(--blue);
+            font-size: 45px;
+            line-height: 1;
+        }
+
+        footer .footer-line {
+            color: #82b0c5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin: 8px 0 12px;
+        }
+
+        footer .footer-line::before,
+        footer .footer-line::after {
+            content: "";
+            width: 70px;
+            height: 1px;
+            background: #92b9ca;
+        }
+
+        footer p {
+            font-size: 13px;
+            color: #76909d;
+            margin-top: 5px
+        }
+
+        footer .tiny {
+            font-size: 10px;
+            opacity: .65;
+            margin-top: 25px
+        }
+
+        /* ---------- REVEAL ---------- */
+        .reveal {
+            opacity: 0;
+            transform: translateY(32px);
+            transition: opacity .8s ease, transform .8s ease
+        }
+
+        .reveal.show {
+            opacity: 1;
+            transform: none
+        }
+
+        /* =================================================
    RESPONSIVE
 ================================================= */
-@media(max-width:980px){
-    .hero{min-height:620px;background-position:center center}
-    .hero::before{
-        background:linear-gradient(90deg,
-            rgba(255,255,255,.02) 0%,
-            rgba(255,255,255,.18) 38%,
-            rgba(255,255,255,.78) 63%,
-            rgba(255,253,248,.95) 100%);
-    }
-    .hero-content{min-height:620px}
-    .hero-copy{width:58%}
-    .countdown{grid-template-columns:1fr}
-    .count-intro{min-height:auto;padding-bottom:0}
-    .rsvp-left{padding:34px 30px}
-    .bottom-grid{gap:18px}
-    .soft-card{padding:28px 22px}
-    .parents-card{grid-template-columns:1fr}
-    .parents-photo{order:2}
-    .parents-info{order:1}
-}
-@media(max-width:700px){
-    .music{width:50px;height:50px;top:12px;right:12px}
-    .hero{
-        min-height:720px;
-        background-position:center top;
-        background-size:auto 720px;
-    }
-    .hero::before{
-        background:linear-gradient(180deg,
-            rgba(255,255,255,.12) 0%,
-            rgba(255,255,255,.50) 38%,
-            rgba(255,255,255,.03) 68%);
-    }
-    .hero-content{
-        min-height:720px;
-        width:94%;
-        align-items:flex-start;
-        justify-content:center;
-        padding-top:36px;
-    }
-    .hero-copy{width:100%;padding:0}
-    .kicker{font-size:10px;letter-spacing:2.6px}
-    .hero h1{font-size:68px}
-    .hero-sub{font-size:16px;margin:12px 0 10px}
-    .name-pill{padding:9px 20px;gap:9px}
-    .name-pill strong{font-size:38px;letter-spacing:5px}
-    .hero-message{
-        max-width:360px;font-size:13px;
-        line-height:1.55;margin-top:15px;
-    }
-    .waiting{font-size:32px}
-    .section{width:94%;padding:42px 0}
-    .section-title{font-size:43px;margin-bottom:26px}
-    .count-grid{gap:8px;padding:15px 5px}
-    .time-box{width:calc(50% - 6px);height:92px}
-    .time-box b{font-size:36px}
-    .event-wrap{padding:5px 7px 20px}
-    .event-grid{grid-template-columns:1fr}
-    .event{min-height:150px;padding:23px 15px}
-    .event:not(:last-child)::after{
-        top:auto;bottom:0;right:20%;width:60%;height:1px;
-    }
-    .rsvp{grid-template-columns:1fr}
-    .rsvp-left{
-        border-right:none;border-bottom:1px solid #d5e4ea;
-        padding:32px 24px;text-align:center;
-    }
-    .rsvp-left .wa-icon{float:none;margin:0}
-    .rsvp-right{padding:28px 20px}
-    .bottom-grid{grid-template-columns:1fr}
-    .soft-card{min-height:auto}
-    .parents-card{padding:30px}
-    .polaroid{width:185px}
-    footer{padding-top:82px}
-}
-@media(max-width:380px){
-    .hero h1{font-size:60px}
-    .time-box{width:calc(50% - 6px)}
-    .btn{padding:13px 18px;font-size:13px}
-}
-</style>
+        @media(max-width:980px) {
+            .hero {
+                min-height: 620px;
+                background-position: center center
+            }
+
+            .hero::before {
+                background: linear-gradient(90deg,
+                        rgba(255, 255, 255, .02) 0%,
+                        rgba(255, 255, 255, .18) 38%,
+                        rgba(255, 255, 255, .78) 63%,
+                        rgba(255, 253, 248, .95) 100%);
+            }
+
+            .hero-content {
+                min-height: 620px
+            }
+
+            .hero-copy {
+                width: 58%
+            }
+
+            .countdown {
+                grid-template-columns: 1fr
+            }
+
+            .count-intro {
+                min-height: auto;
+                padding-bottom: 0
+            }
+
+            .rsvp-left {
+                padding: 34px 30px
+            }
+
+            .bottom-grid {
+                gap: 18px
+            }
+
+            .soft-card {
+                padding: 28px 22px
+            }
+
+            .parents-card {
+                grid-template-columns: 1fr
+            }
+
+            .parents-photo {
+                order: 2
+            }
+
+            .parents-info {
+                order: 1
+            }
+        }
+
+        @media(max-width:700px) {
+            .music {
+                width: 50px;
+                height: 50px;
+                top: 12px;
+                right: 12px
+            }
+
+            .hero {
+                min-height: 720px;
+                background-position: center top;
+                background-size: auto 720px;
+            }
+
+            .hero::before {
+                background: linear-gradient(180deg,
+                        rgba(255, 255, 255, .12) 0%,
+                        rgba(255, 255, 255, .50) 38%,
+                        rgba(255, 255, 255, .03) 68%);
+            }
+
+            .hero-content {
+                min-height: 720px;
+                width: 94%;
+                align-items: flex-start;
+                justify-content: center;
+                padding-top: 36px;
+            }
+
+            .hero-copy {
+                width: 100%;
+                padding: 0
+            }
+
+            .kicker {
+                font-size: 10px;
+                letter-spacing: 2.6px
+            }
+
+            .hero h1 {
+                font-size: 68px
+            }
+
+            .hero-sub {
+                font-size: 16px;
+                margin: 12px 0 10px
+            }
+
+            .name-pill {
+                padding: 9px 20px;
+                gap: 9px
+            }
+
+            .name-pill strong {
+                font-size: 38px;
+                letter-spacing: 5px
+            }
+
+            .hero-message {
+                max-width: 360px;
+                font-size: 13px;
+                line-height: 1.55;
+                margin-top: 15px;
+            }
+
+            .waiting {
+                font-size: 32px
+            }
+
+            .section {
+                width: 94%;
+                padding: 42px 0
+            }
+
+            .section-title {
+                font-size: 43px;
+                margin-bottom: 26px
+            }
+
+            .count-grid {
+                gap: 8px;
+                padding: 15px 5px
+            }
+
+            .time-box {
+                width: calc(50% - 6px);
+                height: 92px
+            }
+
+            .time-box b {
+                font-size: 36px
+            }
+
+            .event-wrap {
+                padding: 5px 7px 20px
+            }
+
+            .event-grid {
+                grid-template-columns: 1fr
+            }
+
+            .event {
+                min-height: 150px;
+                padding: 23px 15px
+            }
+
+            .event:not(:last-child)::after {
+                top: auto;
+                bottom: 0;
+                right: 20%;
+                width: 60%;
+                height: 1px;
+            }
+
+            .rsvp {
+                grid-template-columns: 1fr
+            }
+
+            .rsvp-left {
+                border-right: none;
+                border-bottom: 1px solid #d5e4ea;
+                padding: 32px 24px;
+                text-align: center;
+            }
+
+            .rsvp-left .wa-icon {
+                float: none;
+                margin: 0
+            }
+
+            .rsvp-right {
+                padding: 28px 20px
+            }
+
+            .bottom-grid {
+                grid-template-columns: 1fr
+            }
+
+            .soft-card {
+                min-height: auto
+            }
+
+            .parents-card {
+                padding: 30px
+            }
+
+            .polaroid {
+                width: 185px
+            }
+
+            footer {
+                padding-top: 82px
+            }
+        }
+
+        @media(max-width:380px) {
+            .hero h1 {
+                font-size: 60px
+            }
+
+            .time-box {
+                width: calc(50% - 6px)
+            }
+
+            .btn {
+                padding: 13px 18px;
+                font-size: 13px
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<div class="floating star f1">★</div>
-<div class="floating star f2">★</div>
-<div class="floating star f3">★</div>
-<div class="floating star f4">★</div>
+    <div class="floating star f1">★</div>
+    <div class="floating star f2">★</div>
+    <div class="floating star f3">★</div>
+    <div class="floating star f4">★</div>
 
-<button class="music" id="musicBtn" aria-label="Activar música" title="Música">♫</button>
-<audio id="audio" loop>
-    <source src="cancion.mp3" type="audio/mpeg">
-</audio>
+    <button class="music" id="musicBtn" aria-label="Activar música" title="Música">♫</button>
+    <audio id="audio" loop>
+        <source src="cancion.mp3" type="audio/mpeg">
+    </audio>
 
-<!-- ================= PORTADA ================= -->
-<header class="hero">
-    <div class="hero-content">
-        <div class="hero-copy">
-            <div class="kicker">
-                <span class="mini-heart">♡</span>
-                ESTÁS INVITADO AL
-                <span class="mini-heart">♡</span>
-            </div>
+    <!-- ================= PORTADA ================= -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-copy">
+                <div class="kicker">
+                    <span class="mini-heart">♡</span>
+                    ESTÁS INVITADO AL
+                    <span class="mini-heart">♡</span>
+                </div>
 
-            <h1>Baby Shower</h1>
+                <h1>Baby Shower</h1>
 
-            <div class="hero-sub">De nuestro pequeño</div>
+                <div class="hero-sub">De nuestro pequeño</div>
 
-            <div class="name-pill">
-                <span>♥</span>
-                <strong>ELIAM</strong>
-                <span>♥</span>
-            </div>
+                <div class="name-pill">
+                    <span>♥</span>
+                    <strong>ELIAM</strong>
+                    <span>♥</span>
+                </div>
 
-            <p class="hero-message">
-                Con mucha ilusión, queremos compartir contigo
-                este momento tan especial de nuestras vidas.
-            </p>
+                <p class="hero-message">
+                    Con mucha ilusión, queremos compartir contigo
+                    este momento tan especial de nuestras vidas.
+                </p>
 
-            <div class="waiting">¡Los esperamos!</div>
+                <div class="waiting">¡Los esperamos!</div>
 
-            <div class="decor-line">♥</div>
-        </div>
-    </div>
-</header>
-
-
-<!-- ================= CUENTA REGRESIVA ================= -->
-<section class="section reveal">
-    <div class="countdown">
-        <div class="count-intro">
-            <div>
-                <span class="bear">🧸</span>
-                <h2>Falta muy poquito<br>para este gran día</h2>
+                <div class="decor-line">♥</div>
             </div>
         </div>
+    </header>
 
-        <div class="count-grid">
-            <div class="time-box">
-                <b id="days">00</b>
-                <span>DÍAS</span>
+
+    <!-- ================= CUENTA REGRESIVA ================= -->
+    <section class="section reveal">
+        <div class="countdown">
+            <div class="count-intro">
+                <div>
+                    <span class="bear">🧸</span>
+                    <h2>Falta muy poquito<br>para este gran día</h2>
+                </div>
             </div>
-            <div class="time-box">
-                <b id="hours">00</b>
-                <span>HORAS</span>
-            </div>
-            <div class="time-box">
-                <b id="minutes">00</b>
-                <span>MINUTOS</span>
-            </div>
-            <div class="time-box">
-                <b id="seconds">00</b>
-                <span>SEGUNDOS</span>
+
+            <div class="count-grid">
+                <div class="time-box">
+                    <b id="days">00</b>
+                    <span>DÍAS</span>
+                </div>
+                <div class="time-box">
+                    <b id="hours">00</b>
+                    <span>HORAS</span>
+                </div>
+                <div class="time-box">
+                    <b id="minutes">00</b>
+                    <span>MINUTOS</span>
+                </div>
+                <div class="time-box">
+                    <b id="seconds">00</b>
+                    <span>SEGUNDOS</span>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
-<!-- ================= EVENTO ================= -->
-<section class="section reveal" id="evento">
+    <!-- ================= EVENTO ================= -->
+    <section class="section reveal" id="evento">
 
-    <h2 class="section-title">
-        Fecha, Hora y Lugar
-        <span class="heart">♡</span>
-    </h2>
+        <h2 class="section-title">
+            Fecha, Hora y Lugar
+            <span class="heart">♡</span>
+        </h2>
 
-    <div class="event-wrap">
-        <div class="event-grid">
+        <div class="event-wrap">
+            <div class="event-grid">
 
-            <div class="event">
-                <div class="event-icon">📅</div>
-                <small>Fecha</small>
-                <strong>
-                    Domingo<br>
-                    <span class="big-date">20</span><br>
-                    de Septiembre
-                </strong>
+                <div class="event">
+                    <div class="event-icon">📅</div>
+                    <small>Fecha</small>
+                    <strong>
+                        Domingo<br>
+                        <span class="big-date">20</span><br>
+                        de Septiembre
+                    </strong>
+                </div>
+
+                <div class="event">
+                    <div class="event-icon">🕐</div>
+                    <small>Hora</small>
+                    <strong>4:00 p. m.</strong>
+                </div>
+
+                <div class="event">
+                    <div class="event-icon">📍</div>
+                    <small>Dirección</small>
+                    <strong>Jr. Ayacucho<br>C. 17</strong>
+                </div>
+
             </div>
 
-            <div class="event">
-                <div class="event-icon">🕐</div>
-                <small>Hora</small>
-                <strong>4:00 p. m.</strong>
+            <div class="map">
+                <a class="btn btn-blue" href="https://maps.app.goo.gl/cJqSzqWve5KZS8mr9" target="_blank" rel="noopener">
+                    🗺️ Ver en Google Maps
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= CONFIRMACIÓN ================= -->
+    <section class="section reveal">
+        <div class="rsvp">
+
+            <div class="rsvp-left">
+                <div class="wa-icon">💬</div>
+                <h2>Confirma tu asistencia</h2>
+                <p>
+                    Tu presencia hará este día aún más especial.
+                    Nos encantará contar contigo para celebrar
+                    la llegada de nuestro pequeño Eliam.
+                </p>
+
+                <!-- CAMBIA EL NÚMERO POR EL WHATSAPP REAL -->
+                <a class="btn btn-green"
+                    href="https://wa.me/51993880073?text=Hola%20Anthony%20y%20Daniela%20%F0%9F%92%99%20Confirmo%20mi%20asistencia%20al%20Baby%20Shower%20de%20Eliam."
+                    target="_blank" rel="noopener">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0 0 48 48">
+                        <path fill="#fff"
+                            d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z">
+                        </path>
+                        <path fill="#fff"
+                            d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z">
+                        </path>
+                        <path fill="#cfd8dc"
+                            d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z">
+                        </path>
+                        <path fill="#40c351"
+                            d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z">
+                        </path>
+                        <path fill="#fff" fill-rule="evenodd"
+                            d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z"
+                            clip-rule="evenodd"></path>
+                    </svg> Confirmar por WhatsApp
+                </a>
             </div>
 
-            <div class="event">
-                <div class="event-icon">📍</div>
-                <small>Dirección</small>
-                <strong>Jr. Ayacucho<br>C. 17</strong>
+            <div class="rsvp-right">
+                <p>
+                    Será un honor<br>
+                    compartir este momento<br>
+                    contigo
+                </p>
+                <div class="rsvp-hearts">♡ ♥ ♡</div>
             </div>
 
         </div>
-
-        <div class="map">
-            <a class="btn btn-blue"
-               href="https://maps.app.goo.gl/cJqSzqWve5KZS8mr9"
-               target="_blank" rel="noopener">
-               🗺️ Ver en Google Maps
-            </a>
-        </div>
-    </div>
-</section>
+    </section>
 
 
-<!-- ================= CONFIRMACIÓN ================= -->
-<section class="section reveal">
-    <div class="rsvp">
+    <!-- ================= PRESENCIA + PAPÁS ================= -->
+    <section class="section reveal">
+        <div class="bottom-grid">
 
-        <div class="rsvp-left">
-            <div class="wa-icon">💬</div>
-            <h2>Confirma tu asistencia</h2>
-            <p>
-                Tu presencia hará este día aún más especial.
-                Nos encantará contar contigo para celebrar
-                la llegada de nuestro pequeño Eliam.
-            </p>
-
-            <!-- CAMBIA EL NÚMERO POR EL WHATSAPP REAL -->
-            <a class="btn btn-green"
-               href="https://wa.me/51993880073?text=Hola%20Anthony%20y%20Daniela%20%F0%9F%92%99%20Confirmo%20mi%20asistencia%20al%20Baby%20Shower%20de%20Eliam."
-               target="_blank" rel="noopener">
-               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35" height="35" viewBox="0 0 48 48">
-<path fill="#fff" d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z"></path><path fill="#fff" d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z"></path><path fill="#cfd8dc" d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z"></path><path fill="#40c351" d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z"></path><path fill="#fff" fill-rule="evenodd" d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z" clip-rule="evenodd"></path>
-</svg> Confirmar por WhatsApp
-            </a>
-        </div>
-
-        <div class="rsvp-right">
-            <p>
-                Será un honor<br>
-                compartir este momento<br>
-                contigo
-            </p>
-            <div class="rsvp-hearts">♡ ♥ ♡</div>
-        </div>
-
-    </div>
-</section>
+            <!-- TU PRESENCIA -->
+            <div class="soft-card presence-card">
+                <div class="card-icon">🧸</div>
+                <h2>Tu presencia es<br>muy importante para nosotros</h2>
+                <p>
+                    Sabemos que tu presencia ya es un
+                    hermoso regalo; pero un detalle también es una bonita manera de expresar
+                    tu cariño hacia nuestro bebé. 🩵 Si deseas obsequiarnos algo, te invitamos
+                    a pensar en sus diferentes etapas, porque nuestro pequeño crecerá muy rápido. ✨
+                </p>
+                <div class="small-heart">♡ ♥ ♡</div>
+            </div>
 
 
-<!-- ================= PRESENCIA + PAPÁS ================= -->
-<section class="section reveal">
-    <div class="bottom-grid">
+            <!-- LOS FUTUROS PAPÁS -->
+            <div class="soft-card parents-card">
 
-        <!-- TU PRESENCIA -->
-        <div class="soft-card presence-card">
-            <div class="card-icon">🧸</div>
-            <h2>Tu presencia es<br>muy importante para nosotros</h2>
-            <p>
-                Sabemos que tu presencia ya es un
-                 hermoso regalo; pero un detalle también es una bonita manera de expresar
-                  tu cariño hacia nuestro bebé. 🩵 Si deseas obsequiarnos algo, te invitamos
-                   a pensar en sus diferentes etapas, porque nuestro pequeño crecerá muy rápido. ✨
-            </p>
-            <div class="small-heart">♡ ♥ ♡</div>
-        </div>
+                <div class="parents-photo">
+                    <div class="polaroid">
+                        <div class="placeholder">
+                            <img src="IMG_0352.PNG" alt="Anthony y Daniela">
+                        </div>
+                    </div>
 
+                    <div class="polaroid-caption">Una dulce espera 💙</div>
+                </div>
 
-        <!-- LOS FUTUROS PAPÁS -->
-        <div class="soft-card parents-card">
+                <div class="parents-info">
+                    <div class="camera">📷</div>
+                    <h2>Mis Papis</h2>
 
-            <div class="parents-photo">
-                <div class="polaroid">
-                    <div class="placeholder">
-                        <img src="IMG_0352.PNG" alt="Anthony y Daniela">
+                    <div class="parent-names">
+                        Anthony Briones
+                        <span class="and">y</span>
+                        Daniela Bazán
                     </div>
                 </div>
 
-                <div class="polaroid-caption">Una dulce espera 💙</div>
-            </div>
-
-            <div class="parents-info">
-                <div class="camera">📷</div>
-                <h2>Mis Papis</h2>
-
-                <div class="parent-names">
-                    Anthony Briones
-                    <span class="and">y</span>
-                    Daniela Bazán
-                </div>
             </div>
 
         </div>
-
-    </div>
-</section>
+    </section>
 
 
-<!-- ================= FOOTER ================= -->
-<footer>
-    <div class="footer-inner">
-        <div class="footer-bear">🧸</div>
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-bear">🧸</div>
 
-        <h2>Con todo nuestro amor</h2>
+            <h2>Con todo nuestro amor</h2>
 
-        <div class="footer-line">♥</div>
+            <div class="footer-line">♥</div>
 
-        <p>Anthony &amp; Daniela</p>
-        <p>Esperando con amor a nuestro pequeño Eliam</p>
+            <p>Anthony &amp; Daniela</p>
+            <p>Esperando con amor a nuestro pequeño Eliam</p>
 
-        <p class="tiny">Hecho con mucho amor para Eliam 💙</p>
-    </div>
-</footer>
-
-
-<script>
-
-/* =================================================
-   CONFIGURACIÓN DEL EVENTO
-================================================= */
-const fechaEvento = new Date("2026-09-20T16:00:00");
+            <p class="tiny">Hecho con mucho amor para Eliam 💙</p>
+        </div>
+    </footer>
 
 
-/* =================================================
-   CUENTA REGRESIVA
-================================================= */
-function actualizarCuenta(){
+    <script>
 
-    const ahora = new Date();
-    let diferencia = fechaEvento - ahora;
-
-    if(diferencia <= 0){
-        document.getElementById("days").textContent = "00";
-        document.getElementById("hours").textContent = "00";
-        document.getElementById("minutes").textContent = "00";
-        document.getElementById("seconds").textContent = "00";
-        return;
-    }
-
-    const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
-    const horas = Math.floor((diferencia / (1000 * 60 * 60)) % 24);
-    const minutos = Math.floor((diferencia / (1000 * 60)) % 60);
-    const segundos = Math.floor((diferencia / 1000) % 60);
-
-    document.getElementById("days").textContent =
-        String(dias).padStart(2,"0");
-
-    document.getElementById("hours").textContent =
-        String(horas).padStart(2,"0");
-
-    document.getElementById("minutes").textContent =
-        String(minutos).padStart(2,"0");
-
-    document.getElementById("seconds").textContent =
-        String(segundos).padStart(2,"0");
-}
-
-actualizarCuenta();
-setInterval(actualizarCuenta,1000);
+        /* =================================================
+           CONFIGURACIÓN DEL EVENTO
+        ================================================= */
+        const fechaEvento = new Date("2026-09-20T16:00:00");
 
 
-/* =================================================
-   ANIMACIONES AL HACER SCROLL
-================================================= */
-const observer = new IntersectionObserver((entries)=>{
-    entries.forEach((entry)=>{
-        if(entry.isIntersecting){
-            entry.target.classList.add("show");
+        /* =================================================
+           CUENTA REGRESIVA
+        ================================================= */
+        function actualizarCuenta() {
+
+            const ahora = new Date();
+            let diferencia = fechaEvento - ahora;
+
+            if (diferencia <= 0) {
+                document.getElementById("days").textContent = "00";
+                document.getElementById("hours").textContent = "00";
+                document.getElementById("minutes").textContent = "00";
+                document.getElementById("seconds").textContent = "00";
+                return;
+            }
+
+            const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+            const horas = Math.floor((diferencia / (1000 * 60 * 60)) % 24);
+            const minutos = Math.floor((diferencia / (1000 * 60)) % 60);
+            const segundos = Math.floor((diferencia / 1000) % 60);
+
+            document.getElementById("days").textContent =
+                String(dias).padStart(2, "0");
+
+            document.getElementById("hours").textContent =
+                String(horas).padStart(2, "0");
+
+            document.getElementById("minutes").textContent =
+                String(minutos).padStart(2, "0");
+
+            document.getElementById("seconds").textContent =
+                String(segundos).padStart(2, "0");
         }
-    });
-},{
-    threshold:.12
-});
 
-document.querySelectorAll(".reveal").forEach((element)=>{
-    observer.observe(element);
-});
+        actualizarCuenta();
+        setInterval(actualizarCuenta, 1000);
 
 
-/* =================================================
-   MÚSICA
-================================================= */
-const audio = document.getElementById("audio");
-const musicBtn = document.getElementById("musicBtn");
-
-let playing = false;
-
-musicBtn.addEventListener("click",()=>{
-
-    if(playing){
-
-        audio.pause();
-        musicBtn.textContent = "♫";
-        musicBtn.classList.remove("playing");
-
-    }else{
-
-        audio.play()
-        .then(()=>{
-            musicBtn.textContent = "🔊";
-            musicBtn.classList.add("playing");
-        })
-        .catch(()=>{
-            alert(
-                "No se pudo reproducir la música. " +
-                "Verifica que el archivo se llame musica.mp3 " +
-                "y esté en la misma carpeta que el HTML."
-            );
+        /* =================================================
+           ANIMACIONES AL HACER SCROLL
+        ================================================= */
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                }
+            });
+        }, {
+            threshold: .12
         });
 
-    }
+        document.querySelectorAll(".reveal").forEach((element) => {
+            observer.observe(element);
+        });
 
-    playing = !playing;
 
-});
+        /* =================================================
+           MÚSICA
+        ================================================= */
+        const audio = document.getElementById("audio");
+        const musicBtn = document.getElementById("musicBtn");
 
-</script>
+        let playing = false;
+
+        musicBtn.addEventListener("click", () => {
+
+            if (playing) {
+
+                audio.pause();
+                musicBtn.textContent = "♫";
+                musicBtn.classList.remove("playing");
+
+            } else {
+
+                audio.play()
+                    .then(() => {
+                        musicBtn.textContent = "🔊";
+                        musicBtn.classList.add("playing");
+                    })
+                    .catch(() => {
+                        alert(
+                            "No se pudo reproducir la música. " +
+                            "Verifica que el archivo se llame musica.mp3 " +
+                            "y esté en la misma carpeta que el HTML."
+                        );
+                    });
+
+            }
+
+            playing = !playing;
+
+        });
+
+    </script>
 
 </body>
+
 </html>
